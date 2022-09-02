@@ -1,0 +1,22 @@
+{
+  "name": "udemy-react",
+  "version": "1.0.0",
+  "description": "Created following the instructions in \"React: De cero a experto ( Hooks y MERN )\" udemy course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salitomeyo-learning-path/udemy-react-js.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Salome Aristizabal Giraldo <salitomeyo16@gmail.com> (https://github.com/salitomeyo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salitomeyo-learning-path/udemy-react-js/issues"
+  },
+  "homepage": "https://github.com/salitomeyo-learning-path/udemy-react-js#readme"
+}
