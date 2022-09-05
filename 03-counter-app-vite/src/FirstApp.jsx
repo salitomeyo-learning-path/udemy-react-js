@@ -8,11 +8,11 @@ const randomReturn = () => {
     return Math.random();
 }
 
-export const FirstApp = () => {
+export const FirstApp = ({ title }) => {
 
     return (
         <>
-            <h1>{ name }</h1>
+            <h1>{ title }</h1>
             <p>{ newMessage.message }</p>
             <h2>{ randomReturn() }</h2>
         </>
