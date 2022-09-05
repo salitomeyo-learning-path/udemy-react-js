@@ -1,49 +1,49 @@
-import { render } from '@testing-library/react';
-import { FirstApp } from '../src/FirstApp';
-import React from "react";
+// import { render } from '@testing-library/react';
+// import { FirstApp } from '../src/FirstApp';
+// import React from "react";
 
 
-describe('Pruebas en <FirstApp />', () => {
+// describe('Pruebas en <FirstApp />', () => {
 
-    test('debe de hacer match con el snapshot', () => {
-        const title = "Hola, Soy Goku";
+//     test('debe de hacer match con el snapshot', () => {
+//         const title = "Hola, Soy Goku";
 
-        const { container } = render( <FirstApp title={title} /> );
+//         const { container } = render( <FirstApp title={title} /> );
 
-        expect( container ).toMatchSnapshot();
-    });
+//         expect( container ).toMatchSnapshot();
+//     });
 
-    test('debe de mostrar el titulo en un h1', () => {
-        const title = "Hola, Soy Goku";
+//     test('debe de mostrar el titulo en un h1', () => {
+//         const title = "Hola, Soy Goku";
         
-        const { container, getByText } = render( <FirstApp title={title} /> );
+//         const { container, getByText } = render( <FirstApp title={title} /> );
 
-        expect( getByText(title) ).toBeTruthy();
+//         expect( getByText(title) ).toBeTruthy();
 
-        const h1 = container.querySelector('h1');
-        expect( h1.innerHTML ).toBe(title);
-    })
+//         const h1 = container.querySelector('h1');
+//         expect( h1.innerHTML ).toBe(title);
+//     })
 
-    test('debe mostrar el elemento by test id', () => {
-        const title = "Hola, Soy Goku";
+//     test('debe mostrar el elemento by test id', () => {
+//         const title = "Hola, Soy Goku";
         
-        const { container, getByTestId } = render( <FirstApp title={title} /> );
+//         const { container, getByTestId } = render( <FirstApp title={title} /> );
 
-        expect( getByTestId('kitty') ).toBeTruthy();
-        expect( getByTestId('kitty').innerHTML ).toContain('Jade');
-    })
+//         expect( getByTestId('kitty') ).toBeTruthy();
+//         expect( getByTestId('kitty').innerHTML ).toContain('Jade');
+//     })
 
-    test('debe mostrar el subtitulo enviado por prop', () => {
-        const title = "Hola, Soy Goku";
-        const subTitle = "Soy un subtitulo";
+//     test('debe mostrar el subtitulo enviado por prop', () => {
+//         const title = "Hola, Soy Goku";
+//         const subTitle = "Soy un subtitulo";
         
-        const { container, getByText } = render( 
-        <FirstApp 
-            title={title}
-            subTitle={ subTitle}
-        /> );
+//         const { container, getByText } = render( 
+//         <FirstApp 
+//             title={title}
+//             subTitle={ subTitle}
+//         /> );
 
-        expect( getByText(subTitle) ).toBeTruthy();
-    })
+//         expect( getByText(subTitle) ).toBeTruthy();
+//     })
 
-})
+// })

@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -16,7 +18,7 @@ export const CounterApp = ({ value }) => {
 
             <button onClick={ handleAdd }>+1</button>
             <button onClick={ handleSubstract }>-1</button>
-            <button onClick={ handleReset }>reset</button>
+            <button aria-label="reset-btn" onClick={ handleReset }>reset</button>
         </>
     )
 }
