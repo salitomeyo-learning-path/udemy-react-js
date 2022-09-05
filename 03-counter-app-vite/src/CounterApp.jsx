@@ -5,18 +5,18 @@ export const CounterApp = ({ value }) => {
 
     const [ counter, setCounter ] = useState( value );
 
-    const handleAdd = ( event, newValue ) => {
-        console.log('+1');
-        setCounter( counter+1 );
-    }
-
+    const handleAdd = () => setCounter( counter+1 );
+    const handleSubstract = () => setCounter( counter-1 );
+    const handleReset = () => setCounter( value );
 
     return (
         <>
             <h1>CounterApp</h1>
             <h2> { counter } </h2>
 
-            <button onClick={ (event) => handleAdd(event, 'Hello') }>+1</button>
+            <button onClick={ handleAdd }>+1</button>
+            <button onClick={ handleSubstract }>-1</button>
+            <button onClick={ handleReset }>reset</button>
         </>
     )
 }

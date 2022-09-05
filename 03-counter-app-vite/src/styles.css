@@ -9,4 +9,5 @@ html, body {
 button {
     padding: 10px 40px;
     font-size: 1.3rem;
+    margin: 10px;
 }
