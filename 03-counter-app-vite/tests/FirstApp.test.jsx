@@ -24,5 +24,26 @@ describe('Pruebas en <FirstApp />', () => {
         expect( h1.innerHTML ).toBe(title);
     })
 
+    test('debe mostrar el elemento by test id', () => {
+        const title = "Hola, Soy Goku";
+        
+        const { container, getByTestId } = render( <FirstApp title={title} /> );
+
+        expect( getByTestId('kitty') ).toBeTruthy();
+        expect( getByTestId('kitty').innerHTML ).toContain('Jade');
+    })
+
+    test('debe mostrar el subtitulo enviado por prop', () => {
+        const title = "Hola, Soy Goku";
+        const subTitle = "Soy un subtitulo";
+        
+        const { container, getByText } = render( 
+        <FirstApp 
+            title={title}
+            subTitle={ subTitle}
+        /> );
+
+        expect( getByText(subTitle) ).toBeTruthy();
+    })
 
 })
