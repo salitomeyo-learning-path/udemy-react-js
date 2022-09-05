@@ -1,21 +1,20 @@
-const name = 'Salome';
-const newMessage = {
-    message: 'I`m learning react',
-    name: 'Salome'
-}
+import PropTypes from 'prop-types';
 
-const randomReturn = () => {
-    return Math.random();
-}
+export const FirstApp = ({ title, subTitle }) => {
 
-export const FirstApp = ({ title }) => {
+    // if ( !title ) {
+    //     throw new Error('I need a title')
+    // }
 
     return (
         <>
             <h1>{ title }</h1>
-            <p>{ newMessage.message }</p>
-            <h2>{ randomReturn() }</h2>
         </>
     )
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number
 }
 
