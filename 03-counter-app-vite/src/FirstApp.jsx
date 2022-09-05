@@ -1,8 +1,20 @@
+const name = 'Salome';
+const newMessage = {
+    message: 'I`m learning react',
+    name: 'Salome'
+}
+
+const randomReturn = () => {
+    return Math.random();
+}
+
 export const FirstApp = () => {
+
     return (
         <>
-            <h1>Salome</h1>
-            <p>I'm learning react</p>
+            <h1>{ name }</h1>
+            <p>{ newMessage.message }</p>
+            <h2>{ randomReturn() }</h2>
         </>
     )
 }
