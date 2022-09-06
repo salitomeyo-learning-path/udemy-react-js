@@ -3,7 +3,7 @@ import { AddCategory } from "../components/AddCategory";
 import { GifGrid } from "../components/GifGrid";
 
 export const GifExpertApp = () => {
-    const [categories, setCategories] = useState(['One Punch', 'Dragon Ball']);
+    const [categories, setCategories] = useState([]);
 
     const onAddCategory = ( newCategory ) => {
         if ( categories.includes(newCategory) ) return;
@@ -14,16 +14,9 @@ export const GifExpertApp = () => {
         <>
             <h1 className="center">GifExpertApp</h1>
 
-            <div className="flex-box">
-                <div className="item-4">
-                    <AddCategory
-                        onNewCategory={ onAddCategory }
-                    />
-                </div>
-                <div className="item">
-                    <button onClick={ onAddCategory }>Agregar</button>
-                </div>
-            </div>
+            <AddCategory
+                onNewCategory={ onAddCategory }
+            />
 
             { categories.map( category => (
                 <GifGrid 

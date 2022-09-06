@@ -17,13 +17,14 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     return(
-        <form onSubmit={ (event) => onSubmit(event) }>
+        <form className="search-container" onSubmit={ (event) => onSubmit(event) }>
             <input 
                 type="text"
                 placeholder="Search gifs" 
                 value={ inputValue }   
                 onChange = { (event) => onInputChange(event) }
-            />
+                />
+            <button type="submit">Agregar</button>
         </form>
     )
 }
