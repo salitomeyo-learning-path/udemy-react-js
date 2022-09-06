@@ -31,15 +31,6 @@
     background-color: #0f8da1;
   }
 
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  h3 {
-    font-size: 3rem;
-    margin-bottom: 5px;
-  }
-
   .flex-box {
     display: flex;
   }
