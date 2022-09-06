@@ -13,7 +13,7 @@
     border-radius: 5px;
     border: 1px solid rgb(97, 32, 158);
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
     padding: 10px 15px;
     width: 100%;
@@ -21,6 +21,7 @@
   
   button {
     background-color: #12A5BC;
+    font-size: 1rem;
     padding: 10px 30px;
     border-radius: 5px;
     border: none;
@@ -37,6 +38,22 @@
   h3 {
     font-size: 3rem;
     margin-bottom: 5px;
+  }
+
+  .flex-box {
+    display: flex;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .item {
+    flex-grow: 1; /* default 0 */
+  }
+
+  .item-4 {
+    flex-grow: 12; /* default 0 */
   }
   
   .card-grid {
