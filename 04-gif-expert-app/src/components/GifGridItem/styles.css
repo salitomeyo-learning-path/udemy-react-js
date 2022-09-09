@@ -1,0 +1,20 @@
+.gif {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card {
+    background-color: #d0d0d0;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 10px;
+    width: 200px;
+}
+  
+.card p {
+    background-color: #d0d0d0;
+    color: #3f3f3f;
+    text-align: center;
+    margin: 5px;
+}
