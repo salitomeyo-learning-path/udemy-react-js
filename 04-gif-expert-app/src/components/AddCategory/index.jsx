@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
+import PropTypes from '@testing-library/react';
 
-import './styles.css';
+// import './styles.css';
 
 export const AddCategory = ({ onNewCategory }) => {
     const [ inputValue, setInputValue ] = useState('');
@@ -28,3 +29,7 @@ export const AddCategory = ({ onNewCategory }) => {
         </form>
     )
 }
+
+// AddCategory.propTypes = {
+//     onNewCategory: PropTypes.func.isRequired
+// }
