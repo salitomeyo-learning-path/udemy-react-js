@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <GifGridItem /> Should match snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Deku"
+      class="gif"
+      src="https://static.wikia.nocookie.net/boku-no-hero-academia-fanon/images/9/92/Deku.png/revision/latest?cb=20200728090057&path-prefix=es"
+    />
+    <p>
+      Deku
+    </p>
+  </div>
+</div>
+`;
