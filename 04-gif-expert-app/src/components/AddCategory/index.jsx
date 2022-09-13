@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState } from "react";
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
@@ -17,7 +18,10 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
     return(
-        <form className="search-container" onSubmit={ (event) => onSubmit(event) }>
+        <form className="search-container" 
+            onSubmit={ (event) => onSubmit(event) }
+            aria-label="form"
+        >
             <input 
                 type="text"
                 placeholder="Search gifs" 
@@ -27,4 +31,8 @@ export const AddCategory = ({ onNewCategory }) => {
             <button type="submit">Agregar</button>
         </form>
     )
+}
+
+AddCategory.propTypes = {
+    onNewCategory: PropTypes.func.isRequired
 }
