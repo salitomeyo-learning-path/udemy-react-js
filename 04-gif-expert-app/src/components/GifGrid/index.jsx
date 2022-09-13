@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { useFetchGifs } from "../../hooks/useFetchGifs";
 import { GifGridItem } from "../GifGridItem";
 
-import './styles.css';
+// import './styles.css';
 
 export const GifGrid = ({ category }) => {
 
@@ -12,16 +13,11 @@ export const GifGrid = ({ category }) => {
             <h3>{ category }</h3>
             {
                 isLoading ?
-                    <p>cargando</p>
+                    <p>Cargando...</p>
                 :
                     <div className="card-grid">
                     { 
                         gifs.map( (gif) => (
-                            // <GifGridItem 
-                            //     title={gif.title} 
-                            //     key={gif.id} 
-                            //     url={gif.url} 
-                            // />
                             <GifGridItem 
                                 key={gif.id}  
                                 { ...gif }
@@ -33,4 +29,9 @@ export const GifGrid = ({ category }) => {
             }
         </>
     )
+}
+
+
+GifGrid.propTypes = {
+    category: PropTypes.string.isRequired,
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PropTypes from '@testing-library/react';
+import PropTypes from 'prop-types';
 
 // import './styles.css';
 
@@ -33,6 +33,6 @@ export const AddCategory = ({ onNewCategory }) => {
     )
 }
 
-// AddCategory.propTypes = {
-//     onNewCategory: PropTypes.func.isRequired
-// }
+AddCategory.propTypes = {
+    onNewCategory: PropTypes.func.isRequired
+}
