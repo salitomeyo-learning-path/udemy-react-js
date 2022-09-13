@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useFetchGifs } from "../../hooks/useFetchGifs";
 import { GifGridItem } from "../GifGridItem";
 
-// import './styles.css';
+import './styles.css';
 
 export const GifGrid = ({ category }) => {
 

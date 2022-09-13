@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from 'prop-types';
 
-// import './styles.css';
+import './styles.css';
 
 export const AddCategory = ({ onNewCategory }) => {
     const [ inputValue, setInputValue ] = useState('');
