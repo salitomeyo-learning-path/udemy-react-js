@@ -5,7 +5,7 @@ import { Message } from "./Message";
 
 export const FormWithCustomHooks = () => {
 
-    const { formState, onInputChange } = useForm({
+    const { formState, onInputChange, onResetForm } = useForm({
         username: '',
         email: '',
         password: ''
@@ -20,7 +20,7 @@ export const FormWithCustomHooks = () => {
 
             <input 
                 type="text"
-                className="form-control"
+                className="form-control m-2"
                 placeholder="Username"
                 name="username"
                 value={ username }
@@ -28,7 +28,7 @@ export const FormWithCustomHooks = () => {
             />
             <input 
                 type="email"
-                className="form-control mt-2"
+                className="form-control m-2"
                 placeholder="Email"
                 name="email"
                 value={ email }
@@ -36,12 +36,14 @@ export const FormWithCustomHooks = () => {
             />
             <input 
                 type="text"
-                className="form-control"
+                className="form-control m-2"
                 placeholder="Password"
                 name="password"
                 value={ password }
                 onChange={ onInputChange }
             />
+
+            <button className="btn btn-primary m-2" onClick={onResetForm}>Reset</button>
 
             {
                 (password === 'salitomeyo' ) && <Message />
