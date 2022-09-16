@@ -1,5 +1,5 @@
-import { Loading } from "../components/Loading";
-import { Quote } from "../components/Quote";
+import { Loading } from "./components/Loading";
+import { Quote } from "./components/Quote";
 import { useCounter, useFetch } from "../hooks"
 
 export const MultipleCustomHooks = () => {
